@@ -15,9 +15,14 @@ Money transfer service with sync and async processing.
 
 
 ## Run
+Clone the repository
+```bash
+https://github.com/maneeshsagar/tps.git
+```
 
 ```bash
-docker-compose up --build
+cd tps 
+docker-compose up --build -d
 ```
 
 - API: http://localhost:8080
@@ -78,6 +83,10 @@ The system uses three core tables, which act as the source of truth:
 ## Kafka Topics 
 1. **transactions**
 2. **transactions-dlq**
+
+## Postman Collection
+[TPS Postman collection](tps.postman_collection.json)
+
 
 ## Notes
 
