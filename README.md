@@ -1,6 +1,7 @@
-# TPS - Transaction Processing System
+# TPS - Transaction Processing System & Interface
 
-Money transfer service with sync and async processing.
+Internal transfers System with an HTTP Interface
+
 
 ## Stack
 
@@ -88,10 +89,10 @@ The system uses three core tables, which act as the source of truth:
 [TPS Postman collection](tps.postman_collection.json)
 
 
-## Notes
+## Notes & Assumptions
 
 - Amounts in rupees, stored as paise (int64)
-- Max 2 decimal places
+- Max 2 decimal places(rupees can only be valid till two decimal places)
 - No overdrafts
 - No self-transfers
 - Tables auto-migrate on startup
